@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    background-color: rgb(235, 232, 232);
+    height: 100vh;
+    width: 100wh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    background-color: hsl(81, 57%, 65%);
+    padding:1px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 1px solid black;
+    font-weight: 300;
+
+}
+ button:hover{
+    background-color: hsl(234, 64%, 71%);
+    font-weight: 800;
+    text-decoration: underline;
+ }
+
+ nav{
+    display: flex;
+    text-align: center;
+     width: 100%;
+    justify-content: space-around;
+    
+
+ }
+
+ nav.logo{
+    display: flex;
+    font-size: large;
+    font-weight: 600;
+    display: inline-flex;
+ }
+
+ nav ul{
+    display: flex;
+    gap: 80px;
+    text-align: center;
+   
+ }
+ 
+ nav ul li  :hover{
+    background-color: hsl(234, 64%, 71%);
+    text-decoration: underline;
+    font-weight: 800;
+    color: white;
+ }
+
+ .search input{
+    background-color: hsl(0, 34%, 84%);
+    border: 1px solid black;
+ }
+
+ section{
+    display: flex;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+ }
+
+ .hero-left-part p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    width: 50%;
+    
+
+
+    
+
+ }
+
+ .hero-rigt-section img{
+    justify-content:flex-end;
+    text-align: right;
+    border-radius: 50%;
+
+    
+ }
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    display: inline-flex;
+   
+
+}
+
+footer p{
+    
+   
+    text-decoration: underline;
+    font-weight: 500;
+
+
+}
+footer ul{
+    display: flex;
+    gap: 100px;
+}
+
+footer ul li :hover{
+    background-color: hsl(234, 64%, 71%);
+    text-decoration: underline;
+    font-weight: 800;
+    color: white;
+    border-radius: 50%;
+}
+    
+
+ 
+
+ 
+
+    
+    
+ 
+
+
+
+   
+
+   
+ 
+

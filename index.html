@@ -1,146 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone</title>
-    <link rel="stylesheet" href="style/style.css">
+    <title>Chat Bot</title>
+
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
-    <div class="header">
-          <nav>
-            <img src="assest\logo.png" alt="Natflix" class="logo">
-           <div>
-            <button class="language-btn">ENGLISH<img src="assest\down-icon.png"></button >
-            <button>Sign In</button>
-          </div>
-          </nav> 
-        
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
 
-        <!--hero section-->
-<div class="hero-section">
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
 
-   <b><h1>Unlimited movies, TV shows and more </h1></b>
-  
-  <h3>Watch anywhere. Cancel anytime.</h3>
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
 
-  <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
 
-  <form class="sign-up">
-    <input type="Email address" required placeholder="email address">
-    <button type="submit">Get Started</button>
-  </form>
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
 
-</div>
-</div>
+                    </div>
+                </div>
 
-<div class="space"></div>
+            </div>
+        </div>
 
-<!--NEXT SECTION--->
- <div class="main-sectionF">
-  <div class="row-textR">
-    <div class="main-textL">
-      <h1>Enjoy on your TV
-      </h1>
-
-      <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
-    </div>
-    <div class="img-col">
-      <img src="assest\feature-1.png" alt="imges">
-    </div>
-  </div>
- </div>
- 
-  
- <!--section part 2-->
- 
- <div class="main-sectionF">
-  <div class="row-textR">
-
-    <div class="img-col">
-      <img src="assest\feature-2.png">
     </div>
 
-    <div class="main-textL">
-      <h1>Enjoy on your TV
-      </h1>
-      <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
-    </div>
-    
-  </div>
- </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
 
- <!---part3-->
-
- <div class="main-sectionF">
-  <div class="row-textR">
-
-    
-    
-    <div class="main-textL">
-      <h1>Enjoy on your TV
-      </h1>
-      <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
-    </div>
-    <div class="img-col">
-      <img src="assest\feature-3.png">
-    </div>
-  </div>
- </div>
-
-
- <!--part4-->
-
- <div class="main-sectionF">
-  <div class="row-textR">
-
-    <div class="img-col">
-      <img src="assest\feature-4.png">
-    </div>
-    
-    <div class="main-textL">
-      <h1>Enjoy on your TV
-      </h1>
-      <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
-    </div>
-    
-  </div>
- </div>
-
- <footer class="footer">
-  <p>Questions? Call 1-866-579-7172</p>
-  <div class="footer-cols">
-    <ul>
-      <li><a href="#">FAQ</a></li>
-      <li><a href="#">Investor Relations</a></li>
-      <li><a href="#">Ways To Watch</a></li>
-      <li><a href="#">Corporate Information</a></li>
-      <li><a href="#">Netflix Originals</a></li>
-    </ul>
-    <ul>
-      <li><a href="#">Help Center</a></li>
-      <li><a href="#">Jobs</a></li>
-      <li><a href="#">Terms Of Use</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-    <ul>
-      <li><a href="#">Account</a></li>
-      <li><a href="#">Redeem Gift Cards</a></li>
-      <li><a href="#">Privacy</a></li>
-      <li><a href="#">Speed Test</a></li>
-    </ul>
-    <ul>
-      <li><a href="#">Media Center</a></li>
-      <li><a href="#">Buy Gift Cards</a></li>
-      <li><a href="#">Cookie Preferences</a></li>
-      <li><a href="#">Legal Notices</a></li>
-    </ul>
-  </div>
-</footer>
-
-
-
-  
-
-
+</html>

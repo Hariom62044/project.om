@@ -1,0 +1,10 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+body {
+    margin: 0 auto;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/213/032/small/graphics-design-illustration-digital-circuit-with-binary-coded-decimal-diagram-technology-for-background-wallpaper-illustration-free-vector.jpg) hight 80px
+    width 50px;
+}
